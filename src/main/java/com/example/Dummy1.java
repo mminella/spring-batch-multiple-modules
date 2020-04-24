@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example;
 
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class Dummy2 {
+public class Dummy1 {
 
     @Autowired
     JobBuilderFactory jobs;
@@ -20,9 +20,9 @@ public class Dummy2 {
 
     @Bean
     public Step step1() {
-        return steps.get("dummy-tasklet-2")
+        return steps.get("dummy-tasklet-1")
                 .tasklet(((stepContribution, chunkContext) -> {
-                    System.out.println("hello 2");
+                    System.out.println("hello 1");
                     return RepeatStatus.FINISHED;
                 })).build();
     }

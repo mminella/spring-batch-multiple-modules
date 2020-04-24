@@ -1,5 +1,8 @@
 package com.example.demo;
 
+import com.example.Dummy1;
+import com.example.Dummy2;
+
 import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
 import org.springframework.batch.core.configuration.support.ApplicationContextFactory;
 import org.springframework.batch.core.configuration.support.GenericApplicationContextFactory;
